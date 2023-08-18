@@ -1,0 +1,9 @@
+name: Run Maven build
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Run tests
+        run: mvn clean test
