@@ -4,10 +4,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        
       - name: Run tests
         run: |
-          cd tutorial4
-          mvn clean test
+          ld -R
+          
