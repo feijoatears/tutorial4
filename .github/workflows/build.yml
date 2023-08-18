@@ -6,5 +6,7 @@ jobs:
 
     steps:
       - name: Run tests
-        working-directory: ./app
-        run: mvn clean test
+        run: |
+          cd ../
+          cd ../
+          mvn clean test
