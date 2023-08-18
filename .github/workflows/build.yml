@@ -1,0 +1,12 @@
+name: Run Maven build
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Run tests
+      - name: Run tests
+        run: mvn clean test
+          
